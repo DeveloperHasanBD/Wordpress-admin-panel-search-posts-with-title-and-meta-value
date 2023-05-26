@@ -1,3 +1,4 @@
+<?php 
 
 if (!function_exists('extend_admin_search')) {
     add_action('admin_init', 'extend_admin_search');
@@ -29,3 +30,5 @@ if (!function_exists('extend_admin_search')) {
         return $search;
     }
 }
+
+?>
