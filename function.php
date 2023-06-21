@@ -18,7 +18,7 @@ if (!function_exists('extend_admin_search')) {
             $sql    = "
             or exists (
                 select * from {$wpdb->postmeta} where post_id={$wpdb->posts}.ID
-                and meta_key in ('aci_card_number')
+                and meta_key in ('aci_card_number', 'aci_card_number_2', 'aci_card_number_3')
                 and meta_value like %s
             )
         ";
